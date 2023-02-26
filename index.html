@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/f96226a298.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <title>Car-Booking</title>
+</head>
+
+<body>
+  <a href="#" class="to-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <div class="top-bar ">
+      <div class="containerrs container-one">
+      <div class="col-left">
+        <span>
+        <i class="fa fa-map-marker"></i>
+        Transport ltd. inc. 300 Pennsylvania Ave NW
+        </span>
+      </div>
+      <div class="col-right">
+        <ul class="social">
+          <li>
+            <a href="#" target="_self">
+              <i class="fa fa-facebook col-inside " aria-hidden="true"></i>
+              <span class="sr-only"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_self">
+              <i class="fa fa-twitter col-inside" aria-hidden="true"></i>
+              <span class="sr-only"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_self">
+              <i class="fa fa-linkedin col-inside" aria-hidden="true"></i>
+              <span class="sr-only"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_self">
+              <i class="fa fa-google-plus col-inside" aria-hidden="true"></i>
+              <span class="sr-only"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+      <button class="top-bar-close">
+        <i class="fa fa-chevron-down" id="showdown" style="padding: 6px;"></i>
+        <i class="fa fa-chevron-up" id="showup"></i>
+        <span class="sr-only">Close top bar</span>
+      </button> 
+    </div>
+  <!-- header content start -->
+    <header class="header" id="home">
+      <div class="containerr">
+              <div class="logo-left">
+                <img  alt="Site logo" src="/logo1.png">
+              </div>
+              <div class="content-right">
+                     <div class="widget">
+                    <i class="fa fa-phone iconic"></i>
+                    <span>Call Us<br>731-456-895-598</span>
+                  </div>
+                  <div class="widget">
+                    <i class="fa fa-envelope-o iconic"></i>
+                    <span>Email <br>domainname@gmail.com</span>
+                  </div>
+                  <div class="widget">
+                    <i class="fa fa-clock-o iconic"></i>
+                    <span>Opening Time <br>Mon-Sun:9AM-7PM</span>
+                  </div>
+                  <div class="widget one">
+                    <span style="color: #d63c2c">Call Toll Free</span>
+                    <br>
+                    <span style="color: #ffffff">080 - 888 - 357</span>
+                  </div>
+              </div>
+      </div>
+  </header>
+  <!-- nav menu start -->
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <nav id="menu-bar">
+    <ul class="menu-inside">
+      <li class="first "><a href="#home">Home</a></li>
+      <li class="second"><a href="#about">About Us</a></li>
+      <li class="third "><a href="#car">Car Variant</a></li>
+      <li class="forth "><a href="#services">Services</a></li></li>
+      <li class="fivth "><a href="#contact">Contact Us</a></li>
+      <li class="sixth "><a href="#booking">Book Now</a></li>
+      
+    </ul>
+    <div class="menu-btn">
+      <i class="fa-sharp fa-solid fa-bars"></i>
+    </div>
+  </nav>
+  <div class="home" id="booking">
+    <div class="slider">
+      <figure>
+        <img src="./carimages/slider1.png" alt="image1" height="600px">
+        <img src="./carimages/slider2.png" alt="image2" height="600px">
+        <img src="./carimages/slider3.png" alt="image3" height="600px">
+        <img src="./carimages/slider4.png" alt="image4" height="600px">
+        <img src="./carimages/slider5.jpg" alt="image5" height="600px">
+    </div>
+    </figure>
+    <div class="text">
+      <div class="text-1">
+        <b>Travel is an investment in yourself</b>
+      </div>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium culpa ipsa totam, ipsam error itaque,
+        fuga similique sit iure illumspan
+      </span>
+      <br>
+      <!-- <a href="#" class="btn-1 outer-shadow hover-in-shadow">Booking</a> -->
+      <!-- A button to open the popup form -->
+      <button class="open-button btn-1 outer-shadow hover-in-shadow" onclick="openForm()">Booking</button>
+
+      <!-- The form -->
+      <form action="https://formsubmit.co/anupriyajain595@gmail.com" method="POST" id="myForm" class="form-container">
+        <input type="text" name="_honey" style="display: none;">
+
+        <!--Disable CAPTCHA-->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- <input type="hidden" name="_next" value="index.html"> -->
+        <h2>Rent A Car Online</h2>
+        <button class="button" onclick="closeForm()">X</button>
+        <div class="select-inside">
+        <label>Full Name*</label>
+        <input name="Name" placeholder="Enter full name" required="">
+        </div>
+        <div class="select-inside">
+        <label>Phone Number *</label>
+        <input type="tel" name="Phone" placeholder="Enter phone number" required="">
+        </div>
+        <label>Email Address *</label>
+        <input type="email" name="Email" placeholder="Enter a valid email address" required="">
+        <label>Select Car</label>
+        <select name="Car" style="height: 35px;
+        padding: 8px;">
+          <option>Hatchback</option>
+          <option>Sedan</option>
+          <option>SUV/MUV</option>
+          <option>Premium</option>
+          <option>Luxury</option>
+        </select>
+        <label>Self Drive</label>
+        <select name="Self Drive" style="height: 35px;
+        padding: 8px;">
+          <option>Choose Options</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+        <div class="pickdrop">
+        <label>Pickup Point</label>
+        <input type="text" name="PickUp" placeholder="Enter pickup point" required="">
+        </div>
+        <div class="pickdrop">
+        <label>Drop-off Point</label>
+        <input type="text" name="Drop" placeholder="Enter drop off point" required="">
+      </div>
+      <br>
+        <label>Choose Date</label>
+        <input type="date" name="Date">
+        <input id="btn-dark" class="seventh" type="submit" value="submit">
+      </form>
+    </div>
+    <!-- about section start -->
+    <section class="about-section section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="main info">About Us</h2>
+          </div>
+        </div>
+        <div class="row">
+            <div class="video-box">
+              <video autoplay width="550px">
+                <source src="/production ID_4228659.mp4" type="video/mp4">
+              </video>
+            </div>
+          <div class="about-info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nobis ipsum maiores reprehenderit in
+              consectetur ullam quam laboriosam. Modi fuga, quod iste adipisci est sint deserunt dicta cum a vel! Fugit
+              explicabo eveniet voluptatibus, delectus rem</p>
+          
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate, sit quod laborum ad aliquam
+              cum, autem fugit atque ratione sequi quia nobis, numquam accusamus molestias? Repellendus autem debitis
+              officiis reiciendis suscipit unde iusto ipsam architecto alias exercitationem molestias mollitia ipsa
+              deleniti ducimus dolor excepturi eius, perferendis</p>
+          </div>
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="./cardimages/emp1.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">John Dell</h2>
+                <h2 class="position">CEO</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+                <a href="/" class="button1">View more</a>
+              </div>
+            </div>
+            <div class="card ">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="./cardimages/emp2.png" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Kim So Hyun</h2>
+                <h2 class="position">Manager</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                <a href="/" class="button1">View more</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="./cardimages/emp3.png" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Jessica Rodridge</h2>
+                <h2 class="position">Planner</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                <a href="/" class="button1">View more</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="./cardimages/emp4.png" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Albert Brown</h2>
+                <h2 class="position">Director</h2>
+                <p class="description">The lorem text the section that contains header with having open functionality.
+                  Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                <a href="/" class="button1">View more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- car variant section -->
+    <section class="car-section section" id="car">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="What varieties we have">Car variant</h2>
+          </div>
+        </div>
+        <div class="shown"></div>
+        <div class="roww2">
+          <div class="car-item">
+            <div class="car-item-inner outer-shadow">
+              <div class="image-content1">
+                <span class="overlay1"></span>
+
+                <div class="card-image1">
+                  <P class="text1"><i class="fa-solid fa-indian-rupee-sign"></i>10/Per KM</P>
+                  <img src="./carimages/Maruti-Suzuki-Wagon-R-.jpg" class="card-img1">
+                </div>
+              </div>
+              <h3><b>Maruti Wagon R 4+1</b></h3>
+              <p>Mileage 24.35Kmpl<br>Boot-space 341Liter<br>250KM/Day</p>
+            </div>
+          </div>
+          <div class="car-item">
+            <div class="car-item-inner outer-shadow">
+              <div class="image-content1">
+                <span class="overlay1"></span>
+
+                <div class="card-image1">
+                  <P class="text1"><i class="fa-solid fa-indian-rupee-sign"></i>10/Per KM</P>
+                  <img src="./carimages/maruti suzuki.jpg suzuki.jpg" class="card-img1">
+                </div>
+              </div>
+              <h3><b>Maruti Suzuki Ertiga 6+1</b></h3>
+              <p>Mileage 20.5Kmpl<br>Boot-space 209Liter<br>250KM/Day</p>
+            </div>
+          </div>
+          <div class="car-item">
+            <div class="car-item-inner outer-shadow">
+              <div class="image-content1">
+                <span class="overlay1"></span>
+
+                <div class="card-image1">
+                  <P class="text1"><i class="fa-solid fa-indian-rupee-sign"></i>10/Per KM</P>
+                  <img src="./carimages/Hyundai-i20.jpg" class="card-img1">
+                </div>
+              </div>
+              <h3><b>Hyundai i20 5+1</b></h3>
+              <p>Mileage 20.3Kmpl<br>Boot-space 300Liter<br>250KM/Day</p>
+            </div>
+          </div>
+          <div class="car-item">
+            <div class="car-item-inner outer-shadow">
+              <div class="image-content1">
+                <span class="overlay1"></span>
+
+                <div class="card-image1">
+                  <P class="text1"><i class="fa-solid fa-indian-rupee-sign"></i>10/Per KM</P>
+                  <img src="./carimages/scorpio.jpeg" class="card-img1">
+                </div>
+              </div>
+              <h3><b>Mahindra Scorpio 7+1</b></h3>
+              <p>Mileage 16.36Kmpl<br>Boot-space 460Liter<br>250KM/Day</p>
+            </div>
+          </div>
+          <div class="car-item">
+            <div class="car-item-inner outer-shadow">
+              <div class="image-content1">
+                <span class="overlay1"></span>
+
+                <div class="card-image1">
+                  <P class="text1"><i class="fa-solid fa-indian-rupee-sign"></i>10/Per KM</P>
+                  <img src="./carimages/Maruti-Suzuki-Dzire.jpg" class="card-img1">
+                </div>
+              </div>
+              <h3><b>Maruti Swift Dzire 4+1</b></h3>
+              <p>Mileage 23Kmpl<br>Boot-space 378Liter<br>250KM/Day</p>
+            </div>
+          </div>
+          <div class="car-item">
+            <div class="car-item-inner outer-shadow">
+              <div class="image-content1">
+                <span class="overlay1"></span>
+
+                <div class="card-image1">
+                  <P class="text1"><i class="fa-solid fa-indian-rupee-sign"></i>10/Per KM</P>
+                  <img src="./carimages/innova-crysta.jpeg" class="card-img1">
+                </div>
+              </div>
+              <h3><b>Toyota Innova Crysta 7+1</b></h3>
+              <p>Mileage 8 to 10Kmpl<br>Boot-space 300Liter<br>250KM/Day</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service section start -->
+    <section class="service-section section" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="Services">What we do</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="service-item">
+            <div class="service-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <i class="fa-solid fa-gauge"></i>
+              </div>
+              <h3>Fast and Easy Booking</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, optio iste illo laboriosam temporibus nisi.
+              </p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <i class="fa fa-home"></i>
+              </div>
+              <h3>Doorstep Pickup & Drop</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, molestiae possimus sed incidunt sint
+                tenetur quaerat recusandae placeat delectus illo dolores</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+              </div>
+              <h3>No Booking Charges</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit magnam reiciendis minus culpa ad id?</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <i class="fa fa-clock-o"></i>
+              </div>
+              <h3>24x7 Customer Support</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae alias accusantium id, architecto
+                odio cum aperiam, recusandae quaerat consequuntur ad libero nemo debitis deleniti.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+              <h3>Trusted Rent Services</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas nisi eveniet sint unde
+                recusandae at itaque, repellat facere dolorem.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <i class="fa fa-car"></i>
+              </div>
+              <h3>Breakdown Assistance</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam maiores consequatur doloribus quae
+                nesciunt accusantium!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section start -->
+    <!-- contact section start -->
+    <section class="contact-section section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="contact">Get in Touch</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="map-responsive"><iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.3351795924928!2d75.89151466496288!3d22.752939135090216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396302af403406fb%3A0x5b50834b117f8bab!2sVijay%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%20452010!5e0!3m2!1sen!2sin!4v1676544413781!5m2!1sen!2sin"
+              width="580" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="contactForm">
+          <form action="https://formsubmit.co/anupriyajain595@gmail.com" method="POST" id="contact-F">
+            <input type="text" name="_honey" style="display: none;">
+
+        <!--Disable CAPTCHA-->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- <input type="hidden" name="_next" value="index.html"> -->
+        <h2>Send your Query</h2>
+        <div class="inputBox">
+          <input type="text" name="" required="required">
+          <span>Full Name</span>
+        </div>
+        <div class="inputBox">
+          <input type="text" name="" required="required">
+          <span>Email</span>
+        </div>
+        <div class="inputBox">
+          <input type="text" name="" required="required">
+          <span>Type your Queries........</span>
+        </div>
+        <div class="inputBox">
+          <input class="eighteth" type="submit" name="" value="Submit">
+        </div>
+</form>
+</div>
+    </section>
+    <!-- footer section start -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="col-sm-12 text-center d-flex text-light pb-4 mb-4" style="align-items: center; flex-direction: column; display:flex;">
+        <div class="text-center1">Car Rental Online</div>
+        <p class="text-center">Book Cab, Self Drive, Outstation Trips</p>
+        <hr style="width: 30%; height: 3px; color: #fff; background: #fff; margin-bottom: 10px;" >
+        <hr style="width: 35%; height: 3px; background-color: #eb3b5a">
+        <h4 class="text-center1">Office address</h4>
+        <p>Chira Bazar, Mumbai, Maharashtra - 400002</p>
+    </div>
+       <ul class="footer__list">
+        <li>
+          <p class="footer-para">Email Address</p>
+          <a href="#about" class="footer__link">domainname@gmail.com</a>
+        </li>
+
+        <li>
+          <p class="footer-para">Email Address</p>
+          <a href="#car" class="footer__link">support@carrental.in</a>
+        </li>
+
+        <li>
+          <p class="footer-para">Office Hours</p>
+          <a href="#contact" class="footer__link">All Days :: 24X7 Available</a>
+        </li>
+      </ul>
+
+      <ul class="footer__social">
+        <a href="https://www.linkedin.com/in/anupriya-jain-25a0a7214" class="footer__social-link">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+        <a href="https://www.instagram.com/anupriyajain595?r=nametag" class="footer__social-link">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/Anupriy82716981?t=lv11HQ8R6FEQF6KHKq0Z2w&s=09" class="footer__social-link">
+          <i class="fa fa-twitter-square"></i>
+        </a>
+      </ul>
+    </div>
+    <section id="copyright" style="background: #000; color: #fff; text-align:center; height: 7vh;">
+      <div class="container pt-3 pb-3">
+          <div class="row" style="justify-content: center">
+              <div class="col-sm-12" style="font-size: 18px;
+              padding: 10px 0;">
+                Copyright ©-Car Rental. All rigths reserved
+              </div>
+          </div>
+      </div>
+  </section>
+  </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>

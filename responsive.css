@@ -1,0 +1,35 @@
+/* @media(max-width:1200px){
+    .col-left {
+        padding: 5px 65px;
+        font-size: 15px;
+    }
+    .col-right li {
+        padding: 5px 15px;
+    }
+    .col-inside{
+        font-size: 12px;
+    }
+}
+
+
+
+
+@media(max-width: 991px){
+
+}
+    @media(max-width: 767px){
+        .service-section .service-item,
+        .contact-section .contact-item,
+        .home-section .home-text,
+        .home-section .home-img,
+        .about-section .about-info,
+        .about-section .about-img,
+        .about-section .skills .skill-item{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+      
+    }
+    @media(max-width: 547px){
+   
+    } */
