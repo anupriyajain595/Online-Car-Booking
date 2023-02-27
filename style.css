@@ -31,13 +31,15 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 } */
-html,body{
+html,
+body {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
+
 .outer-shadow {
     box-shadow: var(--outer-shadow);
 }
@@ -379,13 +381,14 @@ nav {
 }
 
 .text-1 {
-    font-size: 45px;
+    font-size: 48px;
     color: white;
+    margin-bottom: 25px;
+
 }
 
 .text span {
-    padding: 5px 0;
-    font-size: 22px;
+    font-size: 26px;
     color: white;
 }
 
@@ -404,7 +407,7 @@ nav {
 }
 
 #myForm {
-    transform: translate(145%, -55%);
+    transform: translate(145%, -80%);
     width: 80%;
     padding: 10px;
     position: relative;
@@ -515,7 +518,6 @@ input#btn-dark {
 
 /* about section styling */
 .section-title {
-    padding: 0 15px;
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
@@ -554,7 +556,7 @@ input#btn-dark {
 }
 
 .about-section {
-    padding: 80px 0 0;
+    padding: 150px 0 0;
     min-height: 100vh;
 }
 
@@ -685,7 +687,7 @@ a {
 
 /* car variant section styling */
 .car-section {
-    padding: 80px 0 80px;
+    padding: 150px 0 80px;
     min-height: 100vh;
 }
 
@@ -764,6 +766,7 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+
 .car-section .car-item-inner:hover .icon i {
     color: #1f425d;
 }
@@ -790,7 +793,7 @@ a {
 @keyframes animation {
     0% {
         background-image: url(./carimages/sliders2.jpg);
-        
+
     }
 
     20% {
@@ -799,12 +802,12 @@ a {
 
     40% {
         background-image: url(./carimages/sliders4.jpg);
-        
+
     }
 
     60% {
         background-image: url(./carimages/sliders2.jpg);
-        
+
     }
 
     80% {
@@ -863,7 +866,7 @@ a {
 
 /* service section styling */
 .service-section {
-    padding: 80px 0 80px;
+    padding: 150px 0 80px;
     min-height: 100vh;
 }
 
@@ -940,7 +943,7 @@ a {
 
 /* contact section styling */
 .contact-section {
-    padding: 80px 0 80px;
+    padding: 150px 0 80px;
     min-height: 100vh;
 }
 
@@ -1446,7 +1449,7 @@ ul i {
 
     .col-left,
     .col-right {
-        padding-left: 25px;
+        padding-left: 18px;
         padding-right: 165px;
     }
 
@@ -1463,11 +1466,11 @@ ul i {
     }
 
     .text-1 {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .text span {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .pickdrop label {
@@ -1479,7 +1482,7 @@ ul i {
     }
 
     #myForm {
-        transform: translate(100%, -45%);
+        transform: translate(110%, -55%);
         width: 98%;
     }
 
@@ -1544,6 +1547,9 @@ ul i {
     .shown {
         height: 50vh;
     }
+    .video-box {
+        margin: 50px auto;
+      }
 
     .text-center {
         font-size: 12px;
@@ -1556,81 +1562,7 @@ ul i {
     }
 }
 
-/* @media(width: 547px) {
-    .logo-left {
-        margin-left: -30px;
-    }
 
-    #menu-bar {
-        width: 10%;
-        margin-left: 85%;
-    }
-
-    .logo-left img {
-        width: 245px;
-    }
-
-    .text {
-        width: 80%;
-    }
-
-    #myForm {
-        transform: translate(-1%, -45%);
-        width: 98%;
-        padding: 0px;
-    }
-
-    .text-1 {
-        font-size: 26px;
-    }
-
-    .text span {
-        font-size: 17px;
-    }
-
-    video {
-        width: 540px;
-    }
-
-    .about-section .about-info {
-        flex: 0 0 80%;
-        max-width: 100%;
-        padding: 0 50px;
-    }
-
-    .card-wrapper {
-        padding-top: 30px;
-        display: block;
-        padding-bottom: 100px;
-    }
-
-    .card {
-        width: 70%;
-        display: inline-block;
-        margin: -21px 0px auto 110px;
-    }
-
-    .top-bar-close {
-        left: 25%;
-    }
-
-    .col-left,
-    .col-right {
-        padding-left: 35px;
-        display: grid;
-        width: 40%;
-        text-align: center;
-    }
-
-    .top-bar {
-        width: 200%;
-    }
-
-    .top-bar .containerrs {
-        margin-left: 105px;
-    }
-
-}  */
 
 @media(max-width: 547px) {
     .card {
@@ -1644,10 +1576,12 @@ ul i {
     .service-section .service-item {
         flex: 1 0 80.33%;
     }
+
     .top-bar {
         width: 120%;
     }
-    .container-one{
+
+    .container-one {
         width: 120%;
     }
 
@@ -1666,11 +1600,16 @@ ul i {
         width: 69%;
         margin: 0 45px;
     }
+    .col-left,
+    .col-right {
+        padding-right: 95px;
+    }
     .text {
         width: 80%;
     }
+
     .text-1 {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .text span {
@@ -1678,9 +1617,10 @@ ul i {
     }
 
     #myForm {
-        transform: translate(-1%, -45%);
+        transform: translate(-1%, -51%);
         width: 98%;
         padding: 0px;
+        background: black;
     }
 
     .about-section .about-info {
@@ -1712,7 +1652,11 @@ ul i {
     .car-section .car-item {
         max-width: 85.33%;
     }
-col-sm-12{
-    font-size: 12px;
-}
+
+    col-sm-12 {
+        font-size: 12px;
+    }
+    .form-container input, textarea, select{
+        padding: 8px;
+    }
 }

@@ -1,5 +1,5 @@
 const button = document.querySelector(".first");
-const audio = new Audio("/audiofiles/home.mp3");
+const audio = new Audio("./audiofiles/home.mp3");
 
 button.addEventListener("click", function () {
 
@@ -8,7 +8,7 @@ button.addEventListener("click", function () {
 
 
 const button0 = document.querySelector(".second");
-const audio0 = new Audio("/audiofiles/about.mp3");
+const audio0 = new Audio("./audiofiles/about.mp3");
 
 button0.addEventListener("click", function () {
 
@@ -17,7 +17,7 @@ button0.addEventListener("click", function () {
 
 
 const button1 = document.querySelector(".third");
-const audio1 = new Audio("/audiofiles/car.mp3");
+const audio1 = new Audio("./audiofiles/car.mp3");
 
 button1.addEventListener("click", function () {
 
@@ -26,7 +26,7 @@ button1.addEventListener("click", function () {
 
 
 const button2 = document.querySelector(".forth");
-const audio2 = new Audio("/audiofiles/services.mp3");
+const audio2 = new Audio("./audiofiles/services.mp3");
 
 button2.addEventListener("click", function () {
 
@@ -35,7 +35,7 @@ button2.addEventListener("click", function () {
 
 
 const button3 = document.querySelector(".fivth");
-const audio3 = new Audio("/audiofiles/contact.mp3");
+const audio3 = new Audio("./audiofiles/contact.mp3");
 
 button3.addEventListener("click", function () {
 
@@ -43,7 +43,7 @@ button3.addEventListener("click", function () {
 });
 
 const button4 = document.querySelector(".sixth");
-const audio4 = new Audio("/audiofiles/book.mp3");
+const audio4 = new Audio("./audiofiles/book.mp3");
 
 button4.addEventListener("click", function () {
 
@@ -51,7 +51,7 @@ button4.addEventListener("click", function () {
 });
 
 const button5 = document.querySelector(".seventh");
-const audio5 = new Audio("/audiofiles/thanks.mp3");
+const audio5 = new Audio("./audiofiles/thanks.mp3");
 
 button5.addEventListener("click", function () {
 
@@ -60,7 +60,7 @@ button5.addEventListener("click", function () {
 
 
 const button6 = document.querySelector(".eighteth");
-const audio6 = new Audio("/audiofiles/query.mp3");
+const audio6 = new Audio("./audiofiles/query.mp3");
 
 button6.addEventListener("click", function () {
 
