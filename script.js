@@ -130,6 +130,11 @@ $('.menu-btn').click(function(){
   $('.menu-btn i').toggleClass("active");
 });
 
+$('#menu-bar .menu-inside a').click(function(event){
+  event.preventDefault(); // prevent the default link behavior
+  $('#menu-bar .menu-inside').removeClass("active"); // hide the menu
+  $('.menu-btn i').removeClass("active"); // change the menu button back to hamburger icon
+});
 
 
 
