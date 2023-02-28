@@ -129,7 +129,19 @@ $('.menu-btn').click(function(){
   $('#menu-bar .menu-inside').toggleClass("active");
   $('.menu-btn i').toggleClass("active");
 });
+  
 
+$('#menu-bar .menu-inside a').click(function(event){
+  event.preventDefault(); // prevent the default link behavior
+
+  $('#menu-bar .menu-inside').removeClass("active"); // hide the menu
+  $('.menu-btn i').removeClass("active"); // change the menu button back to hamburger icon
+
+  // wait for 300 milliseconds before executing the default link behavior
+  setTimeout(function() {
+    window.location = event.currentTarget.href;
+  }, 300);
+});
 
 
 
