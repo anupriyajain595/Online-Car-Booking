@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 :root {
     --bg--black-900: #000000;
     --bg--black-100: #dddddd;
@@ -17,7 +17,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: arial;
+    
 
 }
 
@@ -38,6 +38,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .outer-shadow {
@@ -556,7 +557,7 @@ input#btn-dark {
 }
 
 .about-section {
-    padding: 150px 0 0;
+    padding: 80px 0 0;
     min-height: 100vh;
 }
 
@@ -687,7 +688,7 @@ a {
 
 /* car variant section styling */
 .car-section {
-    padding: 150px 0 80px;
+    padding: 80px 0 0;
     min-height: 100vh;
 }
 
@@ -866,7 +867,7 @@ a {
 
 /* service section styling */
 .service-section {
-    padding: 150px 0 80px;
+    padding: 80px 0 0;
     min-height: 100vh;
 }
 
@@ -943,7 +944,7 @@ a {
 
 /* contact section styling */
 .contact-section {
-    padding: 150px 0 80px;
+    padding: 80px 0 0;
     min-height: 100vh;
 }
 
@@ -1253,7 +1254,9 @@ ul i {
         height: 40px;
         display: grid;
     }
-
+    #menu-bar .menu-inside li a:hover {
+        color: crimson;
+    }
     .top-bar {
         height: 40px;
         display: table;
@@ -1380,7 +1383,6 @@ ul i {
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
-
     }
 
     video {
@@ -1565,6 +1567,18 @@ ul i {
 
 
 @media(max-width: 547px) {
+    .about-section {
+        padding: 100px 0 0;
+    }
+    .car-section {
+        padding: 100px 0 0;
+    }
+    .service-section {
+        padding: 100px 0 0;
+    }
+    .contact-section {
+        padding: 100px 0 0;
+    }
     .card {
         margin: -21px 0px auto 60px;
     }
