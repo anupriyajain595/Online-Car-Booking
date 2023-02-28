@@ -129,7 +129,7 @@ $('.menu-btn').click(function(){
   $('#menu-bar .menu-inside').toggleClass("active");
   $('.menu-btn i').toggleClass("active");
 });
-  
+
 
 
 
