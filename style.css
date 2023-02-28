@@ -1580,7 +1580,7 @@ ul i {
         padding: 100px 0 0;
     }
     .card {
-        margin: -21px 0px auto 60px;
+        margin: -45px 0px auto 60px;
     }
 
     .card-wrapper {
@@ -1640,7 +1640,7 @@ ul i {
     .about-section .about-info {
         flex: 0 0 80%;
         max-width: 100%;
-        padding: 0 50px;
+        padding: 35px 50px;
     }
 
     .card-wrapper {

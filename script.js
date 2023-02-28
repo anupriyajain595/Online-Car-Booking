@@ -144,7 +144,17 @@ $('#menu-bar .menu-inside a').click(function(event){
 });
 
 
-
+//phone no validation
+let PhoneNo = document.getElementById("phoneNo");
+const validationPhone=()=>{
+   if(PhoneNo > 10 && PhoneNo < 10){
+    alert("Please enter valid Phone Number");
+    return (false);
+   }
+   else{
+    return(true);
+   }
+}
 
 
 
