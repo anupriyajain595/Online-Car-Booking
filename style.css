@@ -1646,7 +1646,7 @@ ul i {
     .card-wrapper {
         padding-top: 30px;
         display: block;
-        padding-bottom: 150px;
+        padding-bottom: 190px;
     }
 
     .card {
@@ -1658,10 +1658,14 @@ ul i {
     video {
         width: 340px;
     }
+     .slider figure img {
+        height: 780px;
+    }
 
     .roww2 {
         display: block;
     }
+    
 
     .car-section .car-item {
         max-width: 85.33%;
